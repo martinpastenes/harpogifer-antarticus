@@ -8,17 +8,21 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+<!--FUENTE-->
 
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet"> 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+
 
             :root {
-                --bs-body-font-family: 'Open Sans', sans-serif;
+                --bs-body-font-family: 'Lato', sans-serif;
                 /* el que es color de fondo */
-                --bs-body-bg: rgba(245, 245, 245,1) !important;
+                --bs-body-bg: white !important;
                 /* el que es color de texto */
                 --bs-body-color: rgb(11, 12, 13) !important;
                 /* el que es color de destaque */
@@ -31,14 +35,16 @@
             h4,
             h5,
             h6 {
-                font-family: "Open Sans", sans-serif;
-                font-weight: 600;
+                font-family: "Lato", sans-serif;
+                color: #EC6608;
+
+                font-weight: 700;
             }
 
             h1{
                 font-size: calc(2.5rem + 1.5rem);
-                font-weight: 600;
-                color: black;
+                font-weight: 700;
+                color: #EC6608;
                 text-shadow: 0 0 1rem rgba(50, 40, 50, .25);
 
             }
@@ -47,14 +53,16 @@
             b,
             strong,
             em {
-                font-weight: 600;
+                font-weight: 700;
                 font-style: normal;
+                color: #5B5B5A;
+
             }
 
 
             header {
                 height: 100vh;
-                background: linear-gradient(rgba(245, 245, 245, 0) 10%, var(--bs-body-bg) 100%), url(img/01-header2.gif);
+                background: linear-gradient(rgba(0, 0, 0, 0) 10%, var(--bs-body-bg) 100%), url(img/01-header2.gif);
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -94,8 +102,8 @@
                 <div class="row h-100 d-flex align-items-end">
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
 
-                        <h1 class="text-center display-5">El pez modelo del cambio climático en la Antártica</h1>
-                        <h6 class="text-center my-4">HARPAGIFER ANTARTICUS</h6>
+                        <h1 class="text-center">El pez modelo del cambio climático en la Antártica</h1>
+                        <h6 class="text-center my-3">HARPAGIFER ANTARTICUS</h6>
 
                         <p class="lead">
                        Harpagifer antarcticus es el nombre científico de un pez que habita en la costa de la Antártica e islas cercanas, y que puede mimetizarse fácilmente entre las rocas y el fondo marino. Aunque carece de importancia comercial, cumple un rol crucial sobre las comunidades de pequeños crustáceos (anfípodos): como depredador, controla sus poblaciones que son muy abundantes en la Antártica.</p>
@@ -103,21 +111,30 @@
                 </div>
             </div>
         </header>
-
         <main>
+
+
             
 
             <!--ILUSTRACIÓN PEZ GRANDE-->
             <section>
             <div class="my-4">
-                <object data="img/01-200x100.svg" type="image/svg+xml" class="d-md-none"></object>
+            
+            <!--celular-->
+                <object data="img/01-100x200.svg" type="image/svg+xml" class="d-md-none"></object>
+
+                <!--web-->
                 <object data="img/01-200x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
             </div>
 
-            <div class="container w-75 p-3">
+    
+
+            <!--¿POR QUÉ SON IMPORTANTES?-->
+            <div class="container w-50 p-3">
                     <div class="row">
                         <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                             <h6 class="text-center">¿Por qué son importantes?</h6>
+                        <h3 class="text-center my-4">¿Por qué son importantes?</h3>
+
                             <p>
                     El pez Harpagifer antarcticus es bastante estudiado debido a que está presente en toda la costa y es importante alimento para otras especies. También es regulador de la población de crustáceos pequeños.
                             </p>
@@ -127,210 +144,229 @@
         </section>
 
 
+
+
 <!--VISTAS SUPERIOR Y LATERAL-->
-            <section class="container">
-                <div class="row py-5">
+            <section class="container h-25 w-50 p-3">
+                    <div class="my-4">
             
+            <!--celular-->
+                <object data="img/02-2-100x200.svg" type="image/svg+xml" class="d-md-none"></object>
 
-                     <!--1-->
-                    <div class="col pt-3 pb-4">
-                        <object data="img/02-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
-                        <object data="img/02-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
-                    </div>
-
-                    <!--2-->
-                    <div class="col pt-3 pb-4">
-                        <object data="img/03-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
-                        <object data="img/03-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
-                    </div>
+                <!--web-->
+                <object data="img/02-1-200x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+            </div>
 
                 </div>
             </section>
 
-<!--TEXTO: ALIMENTACIÓN-->
+<!--DEPREDADORES-->
+                    <!--1-->
+            <section class="container w-50 p-3">
+            <div class="row py-5">
+            <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+            <h3 class="text-center my-4">Depredadores</h3>
+            </div>
+            </div>
 
-            <section class="container w-75 py-4">
+
                 <div class="row">
-                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h3 class="text-center">Alimentación</h3>
-                        <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat a urna in mattis. Sed sit amet lacinia dolor. Proin sed leo id risus tristique ultrices ut vel odio. In hac habitasse platea dictumst. Suspendisse lectus nulla, fringilla at neque vel, laoreet dignissim sapien. Sed id pharetra dolor, at placerat mauris. Fusce id metus pharetra, imperdiet enim ut, hendrerit lectus. Nulla vehicula pretium pharetra.
+                    <!--1-->
 
-                        </p>
-                        <div class="my-4">
-                            <object data="img/02-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
-                            <object data="img/02-200x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
-                        </div>
+                    <div class="col-md-4 pt-3 pb-4">
+                        <object data="img/04-1-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
+                        <object data="img/04-1-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                    
                     </div>
+
+                    <!--2-->
+                    <div class="col-md-4 pt-3 pb-4">
+                        <object data="img/04-2-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
+                        <object data="img/04-2-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                    </div>
+
+
+                    <!--3-->
+                    <div class="col-md-4 pt-3 pb-4">
+                        <object data="img/04-3-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
+                        <object data="img/04-3-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                    </div>
+
+                    <!--4-->
+                    <div class="col-md-4 pt-3 pb-4">
+                        <object data="img/04-4-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
+                        <object data="img/04-4-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                    
+                    </div>
+
+                    <!--5-->
+                    <div class="col-md-4 pt-3 pb-4">
+                        <object data="img/04-5-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
+                        <object data="img/04-5-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                    </div>
+
                 </div>
+
             </section>
 
 <!--ALIMENTACIÓN-->
-   <section class="container">
+                    <!--1-->
+            <section class="container w-50 p-3">
                 <div class="row py-5">
-                     <!--1-->
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+
+                        <h3 class="text-center my-4">Alimentación</h3>
+                        
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <!--1-->
+
                     <div class="col-md-4 pt-3 pb-4">
-                        <object data="img/04-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
-                        <object data="img/04-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                        <object data="img/05-1-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
+                        <object data="img/05-1-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                    
                     </div>
 
                     <!--2-->
                     <div class="col-md-4 pt-3 pb-4">
-                        <object data="img/05-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
-                        <object data="img/05-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                        <object data="img/05-2-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
+                        <object data="img/05-2-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
                     </div>
 
-                     <!--3-->
+
+                    <!--3-->
                     <div class="col-md-4 pt-3 pb-4">
-                        <object data="img/05-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
-                        <object data="img/05-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                        <object data="img/05-3-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
+                        <object data="img/05-3-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
                     </div>
-    
+
+                    <!--4-->
+                    <div class="col-md-4 pt-3 pb-4">
+                        <object data="img/05-4-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
+                        <object data="img/05-4-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                    
+                    </div>
+
+                    <!--5-->
+                    <div class="col-md-4 pt-3 pb-4">
+                        <object data="img/05-5-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
+                        <object data="img/05-5-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                    </div>
+
+                    <!--6-->
+                    <div class="col-md-4 pt-3 pb-4">
+                        <object data="img/05-6-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
+                        <object data="img/05-4-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                    
+                    </div>
+
+                    <!--7-->
+                    <div class="col-md-4 pt-3 pb-4">
+                        <object data="img/05-7-100x100.svg" type="image/svg+xml" class="d-md-none"></object>
+                        <object data="img/05-7-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                    </div>
+
                 </div>
+
             </section>
 
 
+<!--CAMBIO CLIMÁTICO-->
+               <section class="w-50 container py-4">
+                <div class="row">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+
+                        <h3 class="text-center">Efectos del cambio climático</h3>
+                         <p>
+                            Las costas antárticas son ambientes altamente vulnerables donde la temperatura se ha mantenido muy constante a lo largo de millones de años. Estas condiciones ambientales únicas han generado una gran cantidad de especies estenoicas que podrían ser altamente sensibles a futuros escenarios de cambio climático. Los individuos adultos fueron expuestos a una combinación ortogonal de cinco temperaturas (2, 5, 8, 11, 14 C) y tres salinidades (23, 28, 33 psu) durante un período de 10 días.
+                        </p>
+                                    </section>
 
 
+               <section class="w-50 container py-4">
+                        <div class="my-4">
+                            <object data="img/06-2-200x100.svg" type="image/svg+xml" class="d-md-none"></object>
+                            <object data="img/06-1-100x100.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                        </div>
+                    </div>
+                </div>
+                                    </section>
 
 
-            <!--TERRITORIO ANTÁRTICO PARA TERMINAR CON EL COLOR-->
-
-            <section class="container-fluid">
-                <div class="container py-4">
+<!--ESPECIES EN CHILE-->
+            <div class="container w-50 p-3">
                     <div class="row">
                         <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                            <h3 class="text-center">Contra el tiempo y con la fuerza de la naturaleza</h3>
+                        <h3 class="text-center my-4">Especies en Chile</h3>
+
                             <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat a urna in mattis. Sed sit amet lacinia dolor. Proin sed leo id risus tristique ultrices ut vel odio. In hac habitasse platea dictumst. Suspendisse lectus nulla, fringilla at neque vel, laoreet dignissim sapien. Sed id pharetra dolor, at placerat mauris. Fusce id metus pharetra, imperdiet enim ut, hendrerit lectus. Nulla vehicula pretium pharetra
+                    Hace un millón de años atrás aproximadamente, sería el tiempo en que se separaron las especies de Harpagifer bispinis y Harpagifer antarcticus.
                             </p>
                         </div>
                     </div>
                 </div>
-            </section>
+        </section>
 
-            <object data="img/10-200x100.svg" type="image/svg+xml" class="w-100"></object>
+        <!--IMG ESPECIES EN CHILE-->
+            <section class="container h-25 w-50 p-3">
+                    <div class="my-4">
+            
+            <!--celular-->
+                <object data="img/07-2-200x100.svg" type="image/svg+xml" class="d-md-none"></object>
 
+                <!--web-->
+                <object data="img/07-1-100x200.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+            </div>
 
-            <section class="bg-gris-2 container-fluid">
-                <div class="container">
-                    <div class="row py-5">
-                        <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                            <p>
-                                Con una explosión de dinamita se horadaba el muro de tierra que mantenía a salvo a los excavadores del canal. Después de cada explosión, el torrente del río San Pedro encontraba un nuevo camino para hacer el
-                                desagüe que liberaría a la zona de una catástrofe mayor.
-                            </p>
-                            <figure class="text-center mb-5">
-
-                                    <video autoplay loop muted playsinline class="w-100">
-                                        <source src="img/ex-gif-dinamita.webm" type="video/webm">
-                                        <source src="img/ex-gif-dinamita.mp4" type="video/mp4">
-                                    </video>
-                                <figcaption class="small">
-                                    Registro del proceso de ensanchamiento del canal extraído del documental
-                                    <a href="http://cinetecavirtual.uchile.cl/cineteca/index.php/Detail/objects/2625">
-                                        "La Respuesta" (1961).
-                                    </a>
-                                </figcaption>
-                            </figure>
-                            <p>
-                                El río San Pedro retomó su cause el 30 de Junio de 1960, Habiendo arrastrado los tacos. Así se hizo el desagüe del Lago Riñihue. Las tierras bajas en Valdivia igualmente recibieron más agua, pero no fue una ola de varios metros, sino una inundación de menos de uno, que anegó a las casas que seguían en pie, sólo en su primer piso.
-                            </p>
-                            <figure class="text-center mb-5">
-                                    <video autoplay loop muted playsinline class="w-100">
-                                        <source src="img/ex-gif-botes.webm" type="video/webm">
-                                        <source src="img/ex-gif-botes.mp4" type="video/mp4">
-                                    </video>  
-
-                                <figcaption class="small">
-                                
-                                    Niños valdivianos jugando en botes tras la liberación de los "tacos", extraído del documental
-                                    <a href="http://cinetecavirtual.uchile.cl/cineteca/index.php/Detail/objects/2625">
-                                        "La Respuesta" (1961).
-                                    </a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
                 </div>
             </section>
+
+
+
+
+
 
 
         </main>
+
+
+
+
+<!--FOOTER-->
+
 
         <aside class="bg-gris-1">
             <div class="container">
                 <div class="row py-5">
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto small text-center">
-                        <p><strong>Infografía desarrollada por</strong> Ljubedsa Calderón, Mirko González, María Ibáñez, Josefina Jara, Margarita Matte, Martín Pastenes</p>
                         <h5 class="mt-3 mb-2">Fuentes</h5>
-                        <p><a href="http://www.memoriachilena.gob.cl/archivos2/pdfs/MC0000526.pdf">La epopeya del Riñihue. Ercilla, 1308</a> &bull; <a href="https://conectaresiliencia.cl/el-rinihuazo-en-datos/">El Riñihuazo en datos</a> &bull; <a href="http://cinetecavirtual.uchile.cl/cineteca/index.php/Detail/objects/2625">Documental "La Respuesta" (1961).</a></p>
+                        <p>Centro de Investigación Dinámica de Ecosistemas Marinos de Altas Latitudes (IDEAL/UACh).
+                        </p>
+                        <p>
+                       <strong> Proyecto FONDAP N°15150003</strong> financiado por la Agencia Nacional de Investigación y Desarrollo (ANID).
+                        </p>
+                        <p>
+                        <strong>REVISORES CIENTÍFICOS:</strong> Dr. (c) Mauricio Palacios | Dr. Iván Gómez / EDICIÓN: Carla Firmani | Lorenzo Palma /
+                        <p>
+                        <strong>INFOGRAFÍA:</strong> Verónica Gatica, Martín Pastenes, Jorge Cortés | Gráfica Interactiva | 2020.
+                        </p>
+                        
+                      
                     </div>
                 </div>
             </div>
         </aside>
 
-        <!--COPIANDO DESDE ACÁ-->
-        <footer class="bg-dark bg-gradient">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-lg-12">
-                        <h4 class="text-white text-center w-75 mx-auto mb-5">Más sobre vulnerabilidades y desastres socionaturales en Chile</h4>
-                    </div>
-                    <!--DESDE AQUÍ LA TORMENTA IGNEA-->
-                    <div class="col-lg-4 mb-4">
-                        <div class="row g-0 bg-black text-white align-items-center shadow">
-                            <div class="col-4">
-                                <img loading="lazy" src="https://raw.githubusercontent.com/profesorfaco/dno075-2021-2/main/img/grupo-incendio.webp" class="w-100" />
-                            </div>
-                            <div class="col-8">
-                                <p class="px-3 small m-0 py-0">
-                                    <a href="https://infodigitalgrupo.github.io/infografia-final/" class="link-light fw-bold" target="_blank">Tormenta Ignea</a><br />
-                                    <small>2017</small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--HASTA AQUÍ LA TORMENTA IGNEA-->
-                    <!--DESDE AQUÍ LA FALLA DE SAN RAMÓN-->
-                    <div class="col-lg-4 mb-4">
-                        <div class="row g-0 bg-black text-white align-items-center shadow">
-                            <div class="col-4">
-                                <img loading="lazy" src="https://raw.githubusercontent.com/profesorfaco/dno075-2021-2/main/img/grupo-falla.webp" class="w-100" />
-                            </div>
-                            <div class="col-8">
-                                <p class="px-3 small m-0 py-0">
-                                    <a href="https://fallasanramon-infografiadigital.github.io/entrega_final/" class="link-light fw-bold" target="_blank">Falla de San Ramón</a><br />
-                                    <small>2021</small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--HASTA AQUÍ LA FALLA DE SAN RAMÓN-->
-                    <!--DESDE AQUÍ EL CHAITÉN-->
-                    <div class="col-lg-4 mb-4">
-                        <div class="row g-0 bg-black text-white align-items-center shadow">
-                            <div class="col-4">
-                                <img loading="lazy" src="https://raw.githubusercontent.com/profesorfaco/dno075-2021-2/main/img/grupo-volcan.webp" class="w-100" />
-                            </div>
-                            <div class="col-8">
-                                <p class="px-3 small m-0 py-0">
-                                    <a href="https://volcan-chaiten.github.io/Infrografia-Final/" class="link-light fw-bold" target="_blank">Chaitén, erupción inesperada</a><br />
-                                    <small>2008</small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--HASTA AQUÍ EL CHAITÉN-->
 
-
-                </div>
-            </div>
             <div class="container-fluid bg-black small text-white-50">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                             <p class="pt-3 text-center d-flex justify-content-between align-items-center">
+
                                 <span>INFOGRAFÍA DIGITAL</span> <a href="https://diseno.uc.cl/" target="_blank" class="link-light">DISEÑO UC</a> <span>DICIEMBRE 2021</span>
                             </p>
                         </div>
